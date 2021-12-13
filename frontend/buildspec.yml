@@ -20,8 +20,12 @@ phases:
       - echo Build started
       - pwd
       - ng build
+      - ls
+      - pwd
+      - cd src/frontend
+      - ls
 artifacts:
   files:
     - "**/*"
-  base-directory: "*"
+  base-directory: "/src/frontend/dist"
   discard-paths: yes
