@@ -22,7 +22,6 @@ phases:
       - ng build
       - ls
       - pwd
-      - cd src/frontend
       - ls
 artifacts:
   files:
