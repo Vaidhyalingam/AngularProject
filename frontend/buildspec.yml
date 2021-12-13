@@ -1,10 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    CACHE_CONTROL: "86400"
-    S3_BUCKET: "{{s3_bucket_url}}"
-    BUILD_FOLDER: "/frontend/dist"
 phases:
   install:
     runtime-versions:
@@ -26,5 +21,5 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "/frontend/dist"
-  discard-paths: yes
+  base-directory: build
+  discard-paths: no
