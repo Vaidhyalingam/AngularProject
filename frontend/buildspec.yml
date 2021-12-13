@@ -19,11 +19,11 @@ phases:
       - pwd
       - ls
 artifacts:
+  commands:
+    - echo Build started
+    - pwd
+    - ls
   files:
     - "**/*"
-    commands:
-      - echo Build started
-      - pwd
-      - ls
-  base-directory: "dist*"
+  base-directory: ""
   discard-paths: no
