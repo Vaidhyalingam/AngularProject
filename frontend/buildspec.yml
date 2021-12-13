@@ -23,5 +23,5 @@ phases:
 artifacts:
   files:
     - "**/*"
-  base-directory: "/frontend/dist*"
+  base-directory: "/dist*"
   discard-paths: yes
